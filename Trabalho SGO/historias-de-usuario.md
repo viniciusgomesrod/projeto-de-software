@@ -61,3 +61,5 @@ Histórias de usuário são representações de necessidades dos usuários que p
 - HS38 - Como administrador, quero definir permissões específicas para cada tipo de usuário para garantir segurança apropriada.
 - HS39 - Como usuário, quero recuperar minha senha caso a esqueça para manter acesso ao sistema.
 - HS40 - Como administrador, quero monitorar o log de atividades do sistema para auditoria e controle.
+
+---
