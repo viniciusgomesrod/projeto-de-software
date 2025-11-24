@@ -26,6 +26,8 @@ title UC-01 - Comunicacao - Gerenciar Orçamento
 @enduml
 ```
 
+---
+
 ## Emitir Relatórios de Obra:
 
 ```plantuml
@@ -57,6 +59,8 @@ title UC-02 - Comunicacao - Emitir Relatórios de Obra
 @enduml
 ```
 
+---
+
 ## Gerenciar Clientes:
 
 ```plantuml
@@ -81,6 +85,8 @@ title UC-03 - Comunicacao - Gerenciar Clientes
 [Modulo Clientes] -> [**Auxiliar Comercial**]: 12. exibirConfirmacao()
 @enduml
 ```
+
+---
 
 ## Gerenciar Obras:
 
@@ -108,6 +114,8 @@ title UC-04 - Comunicacao - Gerenciar Obras
 [Modulo Obras] -> [**Auxiliar Comercial**]: 14. exibirConfirmacao()
 @enduml
 ```
+
+---
 
 ## Gerenciar Produtos:
 
@@ -138,6 +146,8 @@ title UC-05 - Comunicacao - Gerenciar Produtos
 @enduml
 ```
 
+---
+
 ## Gerenciar Conta:
 
 ```plantuml
@@ -164,6 +174,8 @@ title UC-06 - Comunicacao - Gerenciar Conta
 [Modulo Usuarios] -> [**Usuário**]: 13. exibirConfirmacao()
 @enduml
 ```
+
+---
 
 ## Gerenciar Usuários:
 
@@ -193,6 +205,8 @@ title UC-07 - Comunicacao - Gerenciar Usuários
 @enduml
 ```
 
+---
+
 ## Gerenciar Estoque:
 
 ```plantuml
@@ -219,6 +233,8 @@ title UC-08 - Comunicacao - Gerenciar Estoque
 @enduml
 ```
 
+---
+
 ## Emitir Relatórios Financeiros:
 
 ```plantuml
@@ -238,6 +254,8 @@ title UC-09 - Comunicacao - Emitir Relatórios Financeiros
 [Modulo Financeiro] -> [**Administrador**]: 8. exibirGraficos()
 @enduml
 ```
+
+---
 
 ## Emitir Relatórios Comerciais:
 
@@ -259,31 +277,7 @@ title UC-10 - Comunicacao - Emitir Relatórios Comerciais
 @enduml
 ```
 
-## Gerenciar Despesas e Faturamento:
-
-```plantuml
-@startuml
-title UC-11 - Comunicacao - Gerenciar Despesas e Faturamento
-
-[**Administrador**] -> [Sistema]: 1. acessarFinanceiro()
-[**Administrador**] -> [Modulo Financeiro]: 2. registrarDespesa()
-[**Administrador**] -> [Modulo Financeiro]: 3. registrarFaturamento()
-[**Administrador**] -> [Modulo Financeiro]: 4. consultarFluxo()
-
-[Modulo Financeiro] -> [Banco Dados]: 5. buscarMovimentacoes()
-[Banco Dados] -> [Modulo Financeiro]: 6. retornarDados()
-
-[Modulo Financeiro] -> [Banco Dados]: 7. salvarDespesa()
-[Banco Dados] -> [Modulo Financeiro]: 8. confirmarSalvamento()
-
-[Modulo Financeiro] -> [Banco Dados]: 9. salvarFaturamento()
-[Banco Dados] -> [Modulo Financeiro]: 10. confirmarSalvamento()
-
-[Modulo Financeiro] -> [Modulo Financeiro]: 11. calcularFluxo()
-[Modulo Financeiro] -> [**Administrador**]: 12. exibirFluxo()
-[Modulo Financeiro] -> [**Administrador**]: 13. exibirResumo()
-@enduml
-```
+---
 
 ## Consultar Estoque:
 
@@ -306,3 +300,5 @@ title UC-12 - Comunicacao - Consultar Estoque
 [Modulo Estoque] -> [**Almoxarife**]: 10. exibirEstatisticas()
 @enduml
 ```
+
+---
