@@ -1,5 +1,6 @@
 ## Gerenciar Orçamento:
 
+``` plantuml
 @startuml
 title Caso de Uso: Gerenciar Orçamento
 
@@ -66,7 +67,7 @@ S -> BD: Buscar todos os orçamentos
 BD --> S: Retornar histórico completo
 S -> AC: Exibir lista com status e detalhes
 @enduml
-
+```
 ---
 
 ## Gerenciar Clientes:
