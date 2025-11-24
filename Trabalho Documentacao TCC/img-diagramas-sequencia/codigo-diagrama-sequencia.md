@@ -67,6 +67,8 @@ BD --> S: Retornar histórico completo
 S -> AC: Exibir lista com status e detalhes
 @enduml
 
+---
+
 ## Gerenciar Clientes:
 
 @startuml
@@ -146,6 +148,8 @@ S -> BD: Buscar dados consolidados de clientes
 BD --> S: Retornar dados para relatório
 S -> AC: Exibir relatório com estatísticas\n(clientes ativos, inativos, frequência)
 @enduml
+
+---
 
 ## Gerenciar Obras:
 
@@ -235,6 +239,8 @@ S -> BD: Buscar dados consolidados de obras
 BD --> S: Retornar dados para relatório
 S -> AC: Exibir relatório com estatísticas\n(obras ativas, concluídas, prazos)
 @enduml
+
+---
 
 ## Gerenciar Produtos:
 
@@ -340,6 +346,8 @@ BD --> S: Retornar dados para relatório
 S -> AC: Exibir relatório com estatísticas\n(produtos ativos, mais vendidos, categorias)
 @enduml
 
+---
+
 ## Gerenciar Conta:
 
 @startuml
@@ -444,7 +452,9 @@ else Token inválido/expirado
 end
 @enduml
 
-Emitir Relatórios Financeiros:
+---
+
+## Emitir Relatórios Financeiros:
 
 @startuml
 title Caso de Uso: Emitir Relatórios Financeiros
@@ -478,6 +488,8 @@ BD --> S: Retornar dados de vendas
 S -> S: Calcular faturamento consolidado
 S --> ADM: Exibir relatório de faturamento
 @enduml
+
+---
 
 ## Gerenciar Usuários:
 
@@ -517,6 +529,8 @@ BD --> S: Confirmação de desativação
 S --> ADM: Exibir confirmação
 @enduml
 
+---
+
 ## Gerenciar Estoque:
 
 @startuml
@@ -551,6 +565,8 @@ S -> BD: Gerar dados para relatório
 BD --> S: Retornar dados consolidados
 S --> ALM: Exibir relatório completo
 @enduml
+
+---
 
 ## Emitir Ordem de Produção: 
 
@@ -587,6 +603,8 @@ BD --> S: Confirmação de salvamento
 S -> PROD: Enviar Lista de Corte
 PROD --> S: Confirmação de recebimento
 @enduml
+
+---
 
 ## Emitir Relatórios de Obra:
 
@@ -652,3 +670,5 @@ BD --> S: Confirmação de atualização
 
 S --> AC: Notificar emissão concluída\ncom todos os relatórios gerados
 @enduml
+
+---
